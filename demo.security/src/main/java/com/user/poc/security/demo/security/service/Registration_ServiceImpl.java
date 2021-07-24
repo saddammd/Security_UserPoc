@@ -37,7 +37,7 @@ public class Registration_ServiceImpl implements Registration_Service {
 	public User doRegister(User user) {
 		
 		Role role = new Role();
-		role.setRole_title("User");
+		role.setRole_title("Admin");
 		Set<Role> role_set = new HashSet<>();
 		role_set.add(role);
 		user.setRole(role_set);
